@@ -110,11 +110,15 @@ mark {
     text-align: left;
 }
 
-.bord th {
-    background-color: currentcolor;
-    color: var(--bg-color);
+.theme-clair .bord th {
+    background-color: #111111; 
+    color: #f4f4f4;            
 }
 
+.theme-sombre .bord th {
+    background-color: #f4f4f4; 
+    color: #111111;            
+}
 .image-center {
     display: block;
     width: 100%;
