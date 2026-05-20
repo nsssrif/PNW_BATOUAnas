@@ -147,7 +147,6 @@ mark {
     border: 2px solid #111111;
 }
 
-/* --- Styles du Schéma (Bonus Plan du Site) --- */
 .schema-conteneur {
     margin-top: 40px;
     padding-top: 20px;
@@ -169,7 +168,6 @@ mark {
     padding: 10px;
 }
 
-/* Style des boîtes du schéma */
 .schema-box {
     border: 3px solid currentcolor;
     padding: 15px;
@@ -180,19 +178,17 @@ mark {
     min-width: 180px;
 }
 
-/* Mise en valeur de la boîte Index */
 .box-principal {
-    background-color: #ff003c; /* Rouge vif pour l'index */
-    color: #ffffff !important;  /* Texte toujours blanc sur fond rouge */
+    background-color: #ff003c;
+    color: #ffffff !important;
 }
 
-/* Conteneur des flèches et des pages secondaires */
 .schema-fleches {
     display: flex;
     flex-direction: column;
     gap: 15px;
     width: 100%;
-    padding-left: 40px; /* Décalage pour l'arborescence */
+    padding-left: 40px;
 }
 
 .fleche-liaison {
@@ -201,17 +197,14 @@ mark {
     gap: 15px;
 }
 
-/* Texte de la double flèche (<= =>) */
 .texte-fleche {
     font-weight: bold;
     font-size: 1.2rem;
     font-family: monospace;
 }
 
-/* Ajustements de couleurs pour le survol des boîtes */
 .schema-box:not(.box-principal):hover {
     background-color: currentcolor;
 }
-/* Permet d'inverser la couleur du texte au survol de la boîte */
 .theme-clair .schema-box:not(.box-principal):hover strong { color: #f4f4f4; }
 .theme-sombre .schema-box:not(.box-principal):hover strong { color: #111111; }
