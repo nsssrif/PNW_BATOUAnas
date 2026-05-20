@@ -210,7 +210,8 @@ mark {
 .schema-arborescence .schema-box {
     display: inline-block;
     vertical-align: middle;
-    width: 220px;
+    width: 100%;
+    max-width: 220px;
     transition: background-color 0.2s, color 0.2s;
 }
 
@@ -226,10 +227,3 @@ mark {
     color: #111111;
 }
 
-.schema-arborescence .schema-box {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    max-width: 220px;
-    transition: background-color 0.2s, color 0.2s;
-}
