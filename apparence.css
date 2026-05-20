@@ -149,7 +149,7 @@ mark {
 
 .schema-conteneur {
     margin-top: 40px;
-    padding-top: 20px;
+    padding-top: 30px;
     border-top: 2px dashed currentcolor;
 }
 
@@ -157,54 +157,71 @@ mark {
     font-family: monospace;
     font-weight: bold;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .schema-reseau {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    background: transparent;
-    padding: 10px;
+    display: block;
+    padding: 10px 0;
 }
 
 .schema-box {
+    display: block;
     border: 3px solid currentcolor;
     padding: 15px;
-    font-size: 0.95rem;
     font-family: monospace;
-    display: inline-flex;
-    flex-direction: column;
-    min-width: 180px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: inherit;
+    max-width: 250px;
 }
 
 .box-principal {
     background-color: #ff003c;
-    color: #ffffff !important;
+    color: #ffffff;
+    margin-bottom: 25px;
 }
 
-.schema-fleches {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    padding-left: 40px;
+.box-principal span {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    opacity: 0.9;
 }
 
-.fleche-liaison {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.schema-arborescence {
+    padding-left: 30px;
 }
 
-.texte-fleche {
+.liaison-page {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.symbole-fleche {
+    display: inline-block;
+    font-family: monospace;
     font-weight: bold;
     font-size: 1.2rem;
-    font-family: monospace;
+    margin-right: 15px;
+    vertical-align: middle;
 }
 
-.schema-box:not(.box-principal):hover {
+.schema-arborescence .schema-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 220px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.schema-arborescence .schema-box:hover {
     background-color: currentcolor;
 }
-.theme-clair .schema-box:not(.box-principal):hover strong { color: #f4f4f4; }
-.theme-sombre .schema-box:not(.box-principal):hover strong { color: #111111; }
+
+.theme-clair .schema-arborescence .schema-box:hover strong {
+    color: #f4f4f4;
+}
+
+.theme-sombre .schema-arborescence .schema-box:hover strong {
+    color: #111111;
+}
